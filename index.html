@@ -13,13 +13,20 @@
 </head>
 <body>
   <header>
-    <div class="container row-reverse">
+    <div>
     <img class="t-avatar" src="img/avatar.png" alt="avatar">
     <nav>
       <a href="#">Início</a>
       <a href="#">Contato</a>
+      <a href="#">Linkedin</a>
     </nav>
-    <a href="#" class="button mt-1 mx-auto mb-1">Github</a>
+    <ul>
+      <li>
+        <ion-icon name="logo-github" class="space-icon"></ion-icon>
+        <a href="https://github.com/Mateus608" target="_blank" class="a-icon">Ver no Github</a>
+      </li>
+    </ul>
+    <!--<a href="#" class="button mt-1 mx-auto mb-1">Github</a>-->
     </div>
   </header>
   <main>
@@ -52,7 +59,13 @@
       </article>
       </div>
 
-      <a href="#" class="button mt-2 mx-auto">Contato</a>
+      <ul>
+        <li>
+          <ion-icon name="mail" class="space-icon"></ion-icon>
+          <a href="https://github.com/Mateus608" target="_blank" class="a-icon">Contato</a>
+        </li>
+      </ul>
+      <!--<a href="#" class="button mt-2 mx-auto">Contato</a>-->
     </section>
   </main>
 
@@ -66,12 +79,22 @@
       <a href="#">Início</a>
       <a href="#">Contato</a>
     </nav>
-    <form class="newsletter-form">
-      <label for="email" class="mb-1">Envie uma mensagem</label>
-      <input type="text" name="email" class="mb-1" id="email" placeholder="Digite sua mensagem">
-      <button class="button mb-2">Enviar</button>
-    </form>
+    
+      <div id="social-links">
+        <a href="https://github.com/Mateus608" target="_blank">
+        <ion-icon name="logo-github" class="color-icon"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/mateus_omil5/" target="_blank">
+        <ion-icon name="logo-instagram" class="color-icon"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/mateus-oliveira-milane/" target="_blank">
+        <ion-icon name="logo-linkedin" class="color-icon"></ion-icon>
+        </a>
+      </div>
+
     </div>
   </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
