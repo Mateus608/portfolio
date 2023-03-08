@@ -17,6 +17,7 @@
   --surface-color : rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
+  --color-cards: rgb(54, 54, 54);
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
@@ -61,6 +62,12 @@ nav a {
   padding: 0.5rem;
   text-decoration: none;
   border-radius: 8px;
+}
+
+nav a:hover {
+  -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
 }
 
 /*header nav a:hover {
@@ -238,7 +245,8 @@ h2 {
 .card {
   background-color: var(--color-primary);
   border: 2px solid var(--color-black);
-  box-shadow: 4px 4px 0 var(--color-black);
+  border-radius: 25px;
+  box-shadow: 4px 4px 0 var(--color-cards);
   max-width: 17rem;
   padding: 2rem 0 0 2rem;
 }
@@ -300,10 +308,25 @@ h2 {
   text-align: justify;
 }
 
+.color-p {
+  color: var(--color-black);
+}
+
+.t-img {
+  width: 100%;
+}
+
 .p-icon {
   width: 50%;
   margin: -10;
 }
+
+.about-column {
+    display: block;
+    max-width: 500px;
+    text-align: center;
+  }
+
 
 /*Desktop-Reponsividade*/
 
@@ -312,6 +335,7 @@ h2 {
     display: block;
     text-align: center;
   }
+
   .cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -348,15 +372,14 @@ h2 {
     align-items: center;
     margin: 0 auto;
     max-width: 72rem;
+    gap: 100px;
   }
 
   .container .row-reverse {
     flex-direction: row-reverse;
   }
 
-  .about-column {
-    flex: 2;
-  }
+  
 
   .about-column a {
     font-size: 1.25rem;
