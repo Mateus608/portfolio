@@ -1,24 +1,22 @@
 * {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --color-primary: rgb(132,213,255);
-  --color-secundary: rgb(205,151,253);
+  --color-primary: rgb(132, 213, 255);
+  --color-secundary: rgb(205, 151, 253);
   --color-black: black;
   --color-white: rgb(207, 207, 207);
   /*------------------------------------------------------*/
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color : rgba(255, 255, 255, 0.1);
+  --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --color-cards: rgb(54, 54, 54);
-  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 p {
@@ -26,12 +24,12 @@ p {
 }
 
 body {
-  background: linear-gradient(90deg, rgb(13,17,23) 0%, rgb(22,27,34) 100%);
+  background: linear-gradient(90deg, rgb(13, 17, 23) 0%, rgb(22, 27, 34) 100%);
   padding: 0 1rem;
 }
 
 header {
-  background-color: rgb(22,27,34);
+  background-color: rgb(22, 27, 34);
 }
 
 header,
@@ -62,31 +60,6 @@ nav a {
   padding: 0.5rem;
   text-decoration: none;
 }
-
-/*header nav a:hover {
-  background: var(--highlight-color);
-  border: 1px solid var(--stroke-color);
-  transition: background 0.2s;
-}
-
-header nav a :nth-child(2n-1) pegar elementos impares, ou seja, 2-1 {
-  text-align: right;
-}*/
-
-/*.button {
-  background-color: var(--color-primary);
-  border: 2px solid var(--color-black);
-  box-shadow: 4px 4px 0 var(--color-black);
-  color: var(--color-black);
-  display: block;
-  font-size: 1.25rem;
-  padding: 0.75rem 1rem;
-  max-width: 14rem;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}*/
-
 /*-----------------------------Alterações------------------------------------*/
 .color-icon {
   display: flex;
@@ -155,15 +128,14 @@ ul li:hover {
   font-size: 24px;
 }
 
-#social-links a{
+#social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px;
 
-  transition: background .2s;
+  transition: background 0.2s;
   border-radius: 50%;
-
 }
 
 #social-links a:hover {
@@ -227,7 +199,7 @@ footer nav a {
 .card strong {
   display: block;
   font-size: 1.5rem;
-  margin: 1rem 0
+  margin: 1rem 0;
 }
 
 .card a {
@@ -266,7 +238,7 @@ footer nav a {
 }
 
 .text-primary {
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 
 .text-center {
@@ -296,11 +268,10 @@ footer nav a {
 }
 
 .about-column {
-    display: block;
-    max-width: 500px;
-    text-align: center;
-  }
-
+  display: block;
+  max-width: 500px;
+  text-align: center;
+}
 
 /*Desktop-Reponsividade*/
 
@@ -336,7 +307,7 @@ footer nav a {
   }
 }
 
-@media screen and (min-width: 72rem){
+@media screen and (min-width: 72rem) {
   .container {
     display: flex;
     align-items: center;
@@ -348,8 +319,6 @@ footer nav a {
   .container .row-reverse {
     flex-direction: row-reverse;
   }
-
-  
 
   .about-column a {
     font-size: 1.25rem;
