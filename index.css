@@ -216,7 +216,7 @@ footer nav a {
   border-radius: 25px;
   box-shadow: 4px 4px 0 var(--color-cards);
   max-width: 17rem;
-  padding: 2rem 0 0 2rem;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .card:nth-child(2n) {
