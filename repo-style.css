@@ -66,7 +66,7 @@ nav a {
   justify-content: center;
   flex-direction: column;
 }
-ul {
+#ul {
   list-style: none;
 
   display: flex;
@@ -90,7 +90,7 @@ ul {
   min-width: 188px;
 }
 
-ul li {
+#ul #li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,7 +109,7 @@ ul li {
 }
 
 /* pseudo-selector */
-ul li:hover {
+#ul #li:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
@@ -166,13 +166,6 @@ footer nav a {
   color: var(--color-primary);
 }
 
-textarea {
-  max-width: 300px;
-  max-height: 200px;
-  min-height: 100px;
-  min-width: 200px;
-}
-
 .linguages-section {
   display: flex;
   flex-direction: column;
@@ -181,7 +174,7 @@ textarea {
 
 .txt {
   text-align: center;
-  width: 350px;
+  width: 50rem;
   background: var(--color-primary);
   border-radius: 25px;
   padding: 25px 25px 30px;
@@ -200,31 +193,18 @@ textarea {
   background-color: var(--color-secundary);
 }
 
-.txt textarea {
-  width: 100%;
-  height: 59px;
-  padding: 15px;
-  border-radius: 5px;
-  outline: none;
-
-  background-color: var(--color-primary);
-  border: 2px solid var(--color-black);
-  border-radius: 25px;
-  box-shadow: 4px 4px 0 var(--color-cards);
-  max-width: 17rem;
-  padding: 2rem 2rem 0 2rem;
+.repo1 {
+  display: block;
+  margin-top: 25px;
 }
 
-textarea:focus,
-input:focus,
-select:focus {
-  box-shadow: 0 0 0 0;
-  border: 0 none;
-  outline: 0;
-}
-
-textarea::-webkit-scrollbar {
-  width: 0;
+h2 {
+  display: inline;
+  
+  padding: 10px;
+  background-color:rgb(241, 204, 37);
+  border-radius: 10px;
+  
 }
 
 /*------------------------------------media-Desktop-Reponsividade--------------------------------------*/
@@ -255,7 +235,7 @@ textarea::-webkit-scrollbar {
 
   header img,
   hearder nav,
-  header ul li {
+  header #ul #li {
     margin: 0;
   }
 }
@@ -354,4 +334,26 @@ textarea::-webkit-scrollbar {
   display: block;
   max-width: 500px;
   text-align: center;
+}
+
+/*-----------------------------------------------Repositórios-------------------------------------------------*/
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-html {
+  margin-right: 5px;
+  font-size: 20px;
 }
