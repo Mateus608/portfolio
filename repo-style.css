@@ -35,6 +35,7 @@ header {
 header,
 .hero-section,
 .linguages-section,
+.sobre,
 footer {
   border-color: var(--color-white);
   border-style: solid;
@@ -207,12 +208,44 @@ h2 {
   
 }
 
+h1 {
+  color: var(--color-white);
+}
+
+table {
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  margin: 30px 10px;
+}
+
+th {
+  font-size: 16px;
+  color: var(--color-white);
+  padding: 10px;
+  background: var(--surface-color);
+}
+
+td {
+  color: var(--color-white);
+  text-align: justify;
+  padding: 10px;
+}
+
+.sobre {
+  display: block;
+  text-align: center;
+}
+
 /*------------------------------------media-Desktop-Reponsividade--------------------------------------*/
 @media screen and (min-width: 40rem) {
   header nav {
     display: block;
     text-align: center;
   }
+
+  table {
+  margin: 30px 50px;
+}
 
   .linguages-section {
     flex-direction: row;
