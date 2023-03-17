@@ -223,7 +223,7 @@ h1 {
 table {
   border: 1px solid var(--stroke-color);
   border-radius: 8px;
-  margin: 30px 10px;
+  margin: 30px 5px;
 }
 
 th {
@@ -271,12 +271,20 @@ td {
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
 }
+
+.slide img {
+  max-width: 400px;
+}
 /*------------------------------------media-Desktop-Reponsividade--------------------------------------*/
 @media screen and (min-width: 40rem) {
   header nav {
     display: block;
     text-align: center;
   }
+
+  .slide img {
+  max-width: 500px;
+}
 
   table {
   margin: 30px 50px;
@@ -306,6 +314,10 @@ td {
   header #ul #li {
     margin: 0;
   }
+
+  .slide img {
+  max-width: 900px;
+}
 }
 
 @media screen and (min-width: 72rem) {
@@ -316,6 +328,10 @@ td {
     max-width: 72rem;
     gap: 100px;
   }
+
+  .slide img {
+  max-width: 1200px;
+}
 
   .container .row-reverse {
     flex-direction: row-reverse;
